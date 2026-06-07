@@ -7,16 +7,17 @@ import {
   Title,
   Button,
 } from '@vkontakte/vkui';
-import { NavIdProps } from '@vkontakte/vk-mini-apps-router';
 
-export interface HomeProps extends NavIdProps {}
+interface HomeProps {
+  id: string;
+}
 
 export const Home: FC<HomeProps> = ({ id }) => {
-const [score, setScore] = useState(0);
+  const [score, setScore] = useState(0);
 
-const tap = () => {
-  setScore((prev) => prev + 1);
-};
+  const tap = () => {
+    setScore((prev) => prev + 1);
+  };
 
   return (
     <Panel id={id}>
