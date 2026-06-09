@@ -8,6 +8,8 @@ import {
   Button,
 } from '@vkontakte/vkui';
 
+import GameScene from '../GameScene';
+
 interface HomeProps {
   id: string;
 }
@@ -28,6 +30,8 @@ export const Home: FC<HomeProps> = ({ id }) => {
           <Title level="1" weight="1">
             Очки: {score}
           </Title>
+
+          <GameScene />
 
           <div style={{ marginTop: 30 }}>
             <Button
