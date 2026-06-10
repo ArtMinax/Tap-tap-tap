@@ -33,7 +33,7 @@ export const Home: FC<HomeProps> = ({ id }) => {
 
           <GameScene />
 
-          <div style={{ marginTop: 30 }}>
+          <div style={{ marginTop: 20 }}>
             <Button
               size="l"
               stretched
