@@ -49,4 +49,3 @@ export default function GameScene() {
     </div>
   );
 }
-src/panels/Home.tsx
